@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState }from "react";
 import styled from "styled-components";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 
 function header() {
+  const [burgerStatus, setBurgerStatus] = useState(false);
   return (
     <Container>
       <a>
@@ -22,7 +23,7 @@ function header() {
         <CustomMenu />
       </RightMenu>
 
-      <BurgerNav>
+      <BurgerNav show={burgerStatus}>
         <CloseWrapper>
           <CustomClose />
         </CloseWrapper>
@@ -116,6 +117,7 @@ const BurgerNav = styled.div`
   display: flex;
   flex-direction: column;
   text-align: start;
+  transform: ${props => props.show ? 'translateX(0)' : 'translateX(100%)'};
   
   li {
     padding: 15px 0;
