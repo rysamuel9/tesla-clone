@@ -29,10 +29,27 @@ function Home() {
       <Section
         title="Model X"
         description="Order Online for Touchless Delivery"
-        backgroundImg="model-y.jpg"
+        backgroundImg="model-x.jpg"
         leftBtnText="Custom Order"
         rightBtnText="Existing Inventory"
       />
+
+      <Section
+        title="Lowest Cost Solar Panels in America"
+        description="Money-back guarantee"
+        backgroundImg="solar-panel.jpg"
+        leftBtnText="Order Now"
+        rightBtnText="Learn More"
+      />
+
+      <Section
+        title="Solar for New Roofs"
+        description="Solar Roof Costs Less Than a New Roof Plus Solar Panels"
+        backgroundImg="solar-roof.jpg"
+        leftBtnText="Order Now"
+        rightBtnText="Learn More"
+      />
+
     </Container>
   );
 }
