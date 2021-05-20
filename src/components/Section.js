@@ -6,6 +6,7 @@ function Section({
   description,
   backgroundImg,
   leftBtnText,
+  centerBtn,
   rightBtnText,
 }) {
   // console.log(props);
@@ -19,7 +20,6 @@ function Section({
       <Buttons>
         <ButtonGroup>
           <LeftButton>{ leftBtnText }</LeftButton>
-
           <RightButton>{ rightBtnText }</RightButton>
         </ButtonGroup>
 
