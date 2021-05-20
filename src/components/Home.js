@@ -52,10 +52,9 @@ function Home() {
 
       <Section
         title="Accessories"
-        description="Solar Roof Costs Less Than a New Roof Plus Solar Panels"
+        description=""
         backgroundImg="accessories.jpg"
         leftBtnText="Shop Now"
-        // rightBtnText="Learn More"
       />
 
     </Container>
