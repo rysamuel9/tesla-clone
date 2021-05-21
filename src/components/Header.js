@@ -3,10 +3,15 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
+import { selectCars } from '../features/car/carSlice';
+import { useSelector } from 'react-redux';
 
 function header() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [burgerStatus, setBurgerStatus] = useState(false);
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const cars = useSelector(selectCars);
+  console.log(cars);
   return (
     <Container>
       <a>
